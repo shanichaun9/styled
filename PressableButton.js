@@ -16,12 +16,6 @@ const ButtonText = styled.Text`
   color: ${props => props.color};
 `;
 
-const Break = styled.View`
-  height: 10px;
-  width: 100%;
-  background-color: red;
-`
-
 const PressableButton = ({ onPress, bgColor, title, color }) => (
   <ButtonContainer onPress={onPress} bgColor={bgColor}>
       <ButtonText color={color}>{title}</ButtonText>
